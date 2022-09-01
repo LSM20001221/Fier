@@ -21,7 +21,6 @@ jobs:
           cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
       - name: install pip packages
         run: |
-          python -m pip install --upgrade pip -i https://pypi.doubanio.com/simple/
           >> pip install --upgrade ipykernel -i https://pypi.douban.com/simple
           pip3 install -r requirements.txt
       - name: weixin
